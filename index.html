@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Conservación Chuy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título principal -->
+    <header>
+        <h1>Centro de Conservación Chuy</h1>
+    </header>
+
+    <!-- Menú de navegación con Flexbox -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#actividades-realizadas">Actividades Realizadas</a></li>
+            <li><a href="#proximos-eventos">Próximos Eventos</a></li>
+            <li><a href="#temas-de-interes">Temas de Interés</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor principal con Grid -->
+    <main class="grid-container">
+        <section id="quienes-somos" class="grid-item">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una organización sin fines de lucro dedicada a la conservación del medio ambiente...</p>
+        </section>
+
+        <section id="actividades-realizadas" class="grid-item">
+            <h2>Actividades Realizadas</h2>
+            <ul>
+                <li>Jornadas de reforestación</li>
+                <li>Capacitaciones sobre reciclaje</li>
+                <li>Eventos educativos</li>
+                <li>Proyectos de conservación</li>
+            </ul>
+        </section>
+
+        <section id="temas-de-interes" class="grid-item">
+            <h2>Temas de Interés: Cambio Climático</h2>
+            <p>El cambio climático es uno de los mayores desafíos ambientales de nuestra época...</p>
+            <div class="galeria">
+                <img src="cambio_climatico.jpg" alt="Imagen 1">
+                <img src="images_1.jpeg" alt="Imagen 2">
+
+                <img src="images.jpeg" alt="Imagen 3">
+            </div>
+        </section>
+
+        <section id="proximos-eventos" class="grid-item">
+            <h2>Próximos Eventos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Evento</th>
+                        <th>Ubicación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>18 de diciembre</td>
+                        <td>Charla sobre Energías Renovables</td>
+                        <td>Sala Comunitaria</td>
+                    </tr>
+                    <tr>
+                        <td>28 de diciembre</td>
+                        <td>Jornada de Limpieza</td>
+                        <td>Playa Norte</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="videos-relacionados" class="grid-item">
+            <h2>Videos Relacionados</h2>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/8XeZY9CueAc" frameborder="0" allowfullscreen></iframe>
+
+
+        </section>
+
+        <section id="formulario" class="grid-item">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Centro de Conservación Chuy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
